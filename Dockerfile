@@ -19,7 +19,6 @@ RUN apt-get update && apt-get install -y libpq-dev \
     && docker-php-ext-install pdo_pgsql
 
 # copia o código gerado na etapa de build
-RUN cp /app/config-sample.php /app/config.php
 COPY --from=build /app /var/www/html
 
 # permite URLs amigáveis
