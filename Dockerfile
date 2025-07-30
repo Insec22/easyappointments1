@@ -1,4 +1,3 @@
-```dockerfile
 # ---------- etapa de build ----------
 FROM composer:2 AS build
 WORKDIR /app
